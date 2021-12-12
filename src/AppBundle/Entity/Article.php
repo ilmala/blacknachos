@@ -49,6 +49,13 @@ class Article
      */
     private $publishedAt;
 
+    /**
+     * @var string
+     *
+     * @ORM\ManyToOne(targetEntity="Category", inversedBy="articles")
+     * @ORM\JoinColumn(name="category_id", referencedColumnName="id")
+     */
+    private $category;
 
     /**
      * Get id
@@ -154,6 +161,25 @@ class Article
     public function getPublishedAt()
     {
         return $this->publishedAt;
+    }
+
+    /**
+     * @return string
+     */
+    public function getCategory()
+    {
+        return $this->category;
+    }
+
+    /**
+     * @param string $category
+     * @return Article
+     */
+    public function setCategory($category)
+    {
+        $this->category = $category;
+
+        return $this;
     }
 }
 
