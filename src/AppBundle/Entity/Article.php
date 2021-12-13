@@ -12,6 +12,11 @@ use Doctrine\ORM\Mapping as ORM;
  */
 class Article
 {
+    const STATUS_DRAFT = 'draft';
+    const STATUS_PUBLISH = 'publish';
+    const STATUS_ARCHIVE = 'archive';
+
+
     /**
      * @var int
      *
@@ -27,6 +32,13 @@ class Article
      * @ORM\Column(name="title", type="string", length=255)
      */
     private $title;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="slug", type="string", length=255, unique=true)
+     */
+    private $slug;
 
     /**
      * @var string
@@ -89,6 +101,30 @@ class Article
     public function getTitle()
     {
         return $this->title;
+    }
+
+    /**
+     * Set slug
+     *
+     * @param string $slug
+     *
+     * @return Article
+     */
+    public function setSlug($slug)
+    {
+        $this->slug = $slug;
+
+        return $this;
+    }
+
+    /**
+     * Get slug
+     *
+     * @return string
+     */
+    public function getSlug()
+    {
+        return $this->slug;
     }
 
     /**

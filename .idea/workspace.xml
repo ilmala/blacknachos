@@ -5,16 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="30ec536c-3a11-4fba-aa8a-fec05d8ad475" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/AppBundle/DataFixtures/AppFixtures.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/blacknachos.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/blacknachos.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/AppKernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/AppKernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/AppBundle/Entity/Article.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/Article.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/Entity/Category.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/Category.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
   </component>
@@ -62,6 +67,12 @@
       <path value="$PROJECT_DIR$/vendor/sensio/framework-extra-bundle" />
       <path value="$PROJECT_DIR$/vendor/sensio/distribution-bundle" />
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/doctrine-fixtures-bundle" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/data-fixtures" />
+      <path value="$PROJECT_DIR$/vendor/fakerphp/faker" />
+      <path value="$PROJECT_DIR$/vendor/cocur/slugify" />
+      <path value="$PROJECT_DIR$/vendor/nesbot/carbon" />
+      <path value="$PROJECT_DIR$/vendor/kylekatarnls/update-helper" />
     </include_path>
   </component>
   <component name="ProjectId" id="22BLTtBM0GRbnwZHIsUKc3qt61w" />
@@ -74,6 +85,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -85,11 +97,10 @@
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager">
-    <configuration default="true" type="ComposerRunConfigurationType" factoryName="Composer Script">
-      <option name="pathToComposerJson" value="$PROJECT_DIR$/composer.json" />
-      <method v="2" />
-    </configuration>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/AppBundle" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -99,7 +110,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1639306046710</updated>
-      <workItem from="1639306049878" duration="1522000" />
+      <workItem from="1639306049878" duration="1937000" />
+      <workItem from="1639380813340" duration="2959000" />
     </task>
     <servers />
   </component>
