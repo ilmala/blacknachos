@@ -4,12 +4,14 @@ namespace AppBundle\Entity;
 
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\ORM\Mapping as ORM;
+use JMS\Serializer\Annotation as Serializer;
 
 /**
  * Category
  *
  * @ORM\Table(name="category")
  * @ORM\Entity(repositoryClass="AppBundle\Repository\CategoryRepository")
+ * @Serializer\ExclusionPolicy("all")
  */
 class Category
 {
@@ -25,6 +27,9 @@ class Category
     /**
      * @var string
      *
+     * @Serializer\Expose()
+     * @Serializer\Type("string")
+     * @Serializer\SerializedName("name")
      * @ORM\Column(name="name", type="string", length=255)
      */
     private $name;
@@ -32,6 +37,9 @@ class Category
     /**
      * @var string
      *
+     * @Serializer\Expose()
+     * @Serializer\Type("string")
+     * @Serializer\SerializedName("slug")
      * @ORM\Column(name="slug", type="string", length=255, unique=true)
      */
     private $slug;

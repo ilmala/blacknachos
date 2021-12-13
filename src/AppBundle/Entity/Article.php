@@ -3,12 +3,14 @@
 namespace AppBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use JMS\Serializer\Annotation as Serializer;
 
 /**
  * Article
  *
  * @ORM\Table(name="article")
  * @ORM\Entity(repositoryClass="AppBundle\Repository\ArticleRepository")
+ * @Serializer\ExclusionPolicy("all")
  */
 class Article
 {
@@ -29,6 +31,9 @@ class Article
     /**
      * @var string
      *
+     * @Serializer\Expose()
+     * @Serializer\Type("string")
+     * @Serializer\SerializedName("title")
      * @ORM\Column(name="title", type="string", length=255)
      */
     private $title;
@@ -36,6 +41,9 @@ class Article
     /**
      * @var string
      *
+     * @Serializer\Expose()
+     * @Serializer\Type("string")
+     * @Serializer\SerializedName("slug")
      * @ORM\Column(name="slug", type="string", length=255, unique=true)
      */
     private $slug;
@@ -43,6 +51,9 @@ class Article
     /**
      * @var string
      *
+     * @Serializer\Expose()
+     * @Serializer\Type("string")
+     * @Serializer\SerializedName("content")
      * @ORM\Column(name="content", type="text")
      */
     private $content;
@@ -57,6 +68,9 @@ class Article
     /**
      * @var \DateTime
      *
+     * @Serializer\Expose()
+     * @Serializer\Type("DateTime<'Y-m-d'>")
+     * @Serializer\SerializedName("published")
      * @ORM\Column(name="published_at", type="date")
      */
     private $publishedAt;
@@ -64,6 +78,8 @@ class Article
     /**
      * @var string
      *
+     * @Serializer\Expose()
+     * @Serializer\Type("AppBundle\Entity\Category")
      * @ORM\ManyToOne(targetEntity="Category", inversedBy="articles")
      * @ORM\JoinColumn(name="category_id", referencedColumnName="id")
      */
