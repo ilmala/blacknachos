@@ -3,8 +3,10 @@
 namespace AppBundle\Controller;
 
 use AppBundle\Entity\Article;
+use AppBundle\Entity\Category;
 use JMS\Serializer\SerializerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
@@ -25,11 +27,24 @@ class ArticleController extends Controller
      *
      * @Route("/api/articles", methods={"GET"})
      */
-    public function listAction()
+    public function listAction(Request $request)
     {
+        $category = $this->getDoctrine()
+            ->getRepository(Category::class)
+            ->findOneBySlug(
+                $categorySlug = $request->query->get('category')
+            );
+
+        if ($categorySlug && !$category) {
+            return $this->json(
+                ["message" => "Category '$categorySlug' not found."],
+                404
+            );
+        }
+
         $articles = $this->getDoctrine()
             ->getRepository(Article::class)
-            ->findAll();
+            ->findAllByCategory($category);
 
         $json = $this->serializer->serialize(
             ['articles' => $articles],
@@ -50,9 +65,17 @@ class ArticleController extends Controller
      */
     public function showAction($slug)
     {
+
         $articles = $this->getDoctrine()
             ->getRepository(Article::class)
             ->findOneBySlug($slug);
+
+        if (!$articles) {
+            return $this->json(
+                ["message" => "Article '$slug' not found."],
+                404
+            );
+        }
 
         $json = $this->serializer->serialize(
             ['article' => $articles],

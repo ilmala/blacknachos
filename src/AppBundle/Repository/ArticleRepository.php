@@ -2,6 +2,8 @@
 
 namespace AppBundle\Repository;
 
+use AppBundle\Entity\Category;
+
 /**
  * ArticleRepository
  *
@@ -10,4 +12,11 @@ namespace AppBundle\Repository;
  */
 class ArticleRepository extends \Doctrine\ORM\EntityRepository
 {
+    public function findAllByCategory(Category $category = null)
+    {
+        return $this->findBy(
+            $category ? ['category' => $category] : [],
+            ['publishedAt' => 'DESC']
+        );
+    }
 }
