@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="37px" height="32px" viewBox="0 0 37 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Black Nachos Logo</title>
+    <desc>Created by Straypeople</desc>
+    <defs>
+        <polygon id="path-1" points="0 0.7673 36.8938 0.7673 36.8938 32.7183 0 32.7183"></polygon>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="project-inside" transform="translate(-150.000000, -56.000000)">
+            <g id="LOGO/solo-simbolo" transform="translate(150.000000, 55.000000)">
+                <g id="LOGO-blcknchs">
+                    <g id="Group-59" transform="translate(0.000000, 0.233100)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <g id="Clip-58"></g>
+                        <polygon id="Fill-57" fill="#F0E911" mask="url(#mask-2)" points="20.6118 27.9373 15.9998 19.9493 16.0058 19.9493 12.9218 14.6073 7.3958 5.0373 18.4468 5.0373 29.4988 5.0373 23.9728 14.6073 19.9628 21.5533 21.1628 23.6323 22.4268 25.8233 27.6708 16.7423 36.8938 0.7673 18.4468 0.7673 -0.0002 0.7673 9.2238 16.7423 18.4468 32.7183 20.9098 28.4533"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

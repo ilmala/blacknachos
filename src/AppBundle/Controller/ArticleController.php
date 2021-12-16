@@ -44,7 +44,10 @@ class ArticleController extends Controller
 
         $articles = $this->getDoctrine()
             ->getRepository(Article::class)
-            ->findAllByCategory($category);
+            ->findBy(
+                $category ? ['category' => $category] : [],
+                ['publishedAt' => 'DESC']
+            );
 
         $json = $this->serializer->serialize(
             ['articles' => $articles],

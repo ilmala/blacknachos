@@ -5,7 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="30ec536c-3a11-4fba-aa8a-fec05d8ad475" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/web/img/blacknachos-logo.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0a94b251-282d-41d4-97c5-137a1e387a59.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/0a94b251-282d-41d4-97c5-137a1e387a59.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/AppBundle/Controller/ArticleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/ArticleController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/AppBundle/Repository/ArticleRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Repository/ArticleRepository.php" afterDir="false" />
     </list>
@@ -20,6 +24,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -74,6 +81,7 @@
       <path value="$PROJECT_DIR$/vendor/jms/parser-lib" />
       <path value="$PROJECT_DIR$/vendor/phpcollection/phpcollection" />
       <path value="$PROJECT_DIR$/vendor/phpoption/phpoption" />
+      <path value="$PROJECT_DIR$/vendor/bin/.phpunit" />
     </include_path>
   </component>
   <component name="ProjectId" id="22BLTtBM0GRbnwZHIsUKc3qt61w" />
@@ -115,6 +123,7 @@
       <updated>1639306046710</updated>
       <workItem from="1639306049878" duration="1937000" />
       <workItem from="1639380813340" duration="9889000" />
+      <workItem from="1639641483729" duration="432000" />
     </task>
     <servers />
   </component>
